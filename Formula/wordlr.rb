@@ -1,22 +1,22 @@
 class Wordlr < Formula
   desc "Clone de Wordle pour le terminal"
   homepage "https://github.com/lwsbrdx/wordlr"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/lwsbrdx/wordlr/releases/download/v#{version}/wordlr-macos-arm64.tar.gz"
-      sha256 "cdcd08613e6c2792dabe123ddd8b2d6d955890ce0b058f20c8724198ec91323f"
+      sha256 "561e973e05258f0bc9b6ec7124396df2329d6281c3581c6c3d3fe4b930caae8b"
     else
       url "https://github.com/lwsbrdx/wordlr/releases/download/v#{version}/wordlr-macos-x86_64.tar.gz"
-      sha256 "f0e9630acbf6f28ffd98d94402622af0176354f838585c4e2ddbff3cc4160f86"
+      sha256 "7dc6942fe26c477da3480034846b67e9c6339b7f3aad4ce92dc226a74d1455bc"
     end
   end
 
   on_linux do
     url "https://github.com/lwsbrdx/wordlr/releases/download/v#{version}/wordlr-linux-x86_64.tar.gz"
-    sha256 "5dad345c0f5ba0ba1d72f06d246c5c7aba7151835da7b289a734d083c60d1274"
+    sha256 "bd9cffeea79ed5134ad29550459c7a5bb3574d073606206e9e10f4f99877ee50"
   end
 
   def install
